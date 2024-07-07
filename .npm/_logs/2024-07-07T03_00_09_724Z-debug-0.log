@@ -1,0 +1,625 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@9.2.0
+2 info using node@v18.19.1
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 3ms
+5 timing config:load:file:/usr/share/nodejs/npm/npmrc Completed in 6ms
+6 timing config:load:builtin Completed in 7ms
+7 timing config:load:cli Completed in 4ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:/home/ubuntu/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 1ms
+14 timing config:load:setEnvs Completed in 1ms
+15 timing config:load Completed in 18ms
+16 timing npm:load:configload Completed in 18ms
+17 timing npm:load:mkdirpcache Completed in 1ms
+18 timing npm:load:mkdirplogs Completed in 0ms
+19 verbose title npm install pm2
+20 verbose argv "install" "--global" "pm2"
+21 timing npm:load:setTitle Completed in 2ms
+22 timing config:load:flatten Completed in 5ms
+23 timing npm:load:display Completed in 8ms
+24 verbose logfile logs-max:10 dir:/home/ubuntu/.npm/_logs/2024-07-07T03_00_09_724Z-
+25 verbose logfile /home/ubuntu/.npm/_logs/2024-07-07T03_00_09_724Z-debug-0.log
+26 timing npm:load:logFile Completed in 13ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 1ms
+29 timing npm:load Completed in 44ms
+30 timing config:load:flatten Completed in 1ms
+31 timing arborist:ctor Completed in 1ms
+32 silly logfile start cleaning logs, removing 1 files
+33 silly logfile done cleaning log files
+34 timing idealTree:init Completed in 11ms
+35 timing idealTree:userRequests Completed in 7ms
+36 silly idealTree buildDeps
+37 silly fetch manifest pm2@*
+38 http fetch GET 200 https://registry.npmjs.org/pm2 165ms (cache miss)
+39 silly placeDep ROOT pm2@5.4.1 OK for:  want: *
+40 silly fetch manifest @pm2/agent@~2.0.0
+41 silly fetch manifest @pm2/js-api@~0.8.0
+42 silly fetch manifest @pm2/io@~6.0.0
+43 silly fetch manifest @pm2/pm2-version-check@latest
+44 silly fetch manifest async@~3.2.0
+45 silly fetch manifest blessed@0.1.81
+46 silly fetch manifest chalk@3.0.0
+47 silly fetch manifest chokidar@^3.5.3
+48 silly fetch manifest cli-tableau@^2.0.0
+49 silly fetch manifest commander@2.15.1
+50 silly fetch manifest croner@~4.1.92
+51 silly fetch manifest dayjs@~1.11.5
+52 silly fetch manifest debug@^4.3.1
+53 silly fetch manifest enquirer@2.3.6
+54 silly fetch manifest eventemitter2@5.0.1
+55 silly fetch manifest fclone@1.0.11
+56 silly fetch manifest mkdirp@1.0.4
+57 silly fetch manifest needle@2.4.0
+58 silly fetch manifest pidusage@~3.0
+59 silly fetch manifest pm2-axon@~4.0.1
+60 silly fetch manifest pm2-axon-rpc@~0.7.1
+61 silly fetch manifest pm2-deploy@~1.0.2
+62 silly fetch manifest pm2-multimeter@^0.1.2
+63 silly fetch manifest promptly@^2
+64 silly fetch manifest semver@^7.2
+65 silly fetch manifest source-map-support@0.5.21
+66 silly fetch manifest sprintf-js@1.1.2
+67 silly fetch manifest vizion@~2.2.1
+68 silly fetch manifest js-yaml@~4.1.0
+69 silly fetch manifest pm2-sysmonit@^1.2.8
+70 http fetch GET 200 https://registry.npmjs.org/cli-tableau 217ms (cache miss)
+71 http fetch GET 200 https://registry.npmjs.org/fclone 212ms (cache miss)
+72 http fetch GET 200 https://registry.npmjs.org/async 225ms (cache hit)
+73 http fetch GET 200 https://registry.npmjs.org/chalk 226ms (cache hit)
+74 http fetch GET 200 https://registry.npmjs.org/chokidar 226ms (cache hit)
+75 http fetch GET 200 https://registry.npmjs.org/commander 226ms (cache hit)
+76 http fetch GET 200 https://registry.npmjs.org/debug 225ms (cache hit)
+77 http fetch GET 200 https://registry.npmjs.org/mkdirp 223ms (cache hit)
+78 http fetch GET 200 https://registry.npmjs.org/source-map-support 211ms (cache hit)
+79 http fetch GET 200 https://registry.npmjs.org/sprintf-js 211ms (cache hit)
+80 http fetch GET 200 https://registry.npmjs.org/js-yaml 211ms (cache hit)
+81 http fetch GET 200 https://registry.npmjs.org/pm2-multimeter 224ms (cache miss)
+82 http fetch GET 200 https://registry.npmjs.org/pm2-axon 234ms (cache miss)
+83 http fetch GET 200 https://registry.npmjs.org/promptly 226ms (cache miss)
+84 http fetch GET 200 https://registry.npmjs.org/pm2-axon-rpc 239ms (cache miss)
+85 http fetch GET 200 https://registry.npmjs.org/semver 231ms (cache revalidated)
+86 http fetch GET 200 https://registry.npmjs.org/eventemitter2 250ms (cache miss)
+87 http fetch GET 200 https://registry.npmjs.org/vizion 233ms (cache miss)
+88 http fetch GET 200 https://registry.npmjs.org/needle 255ms (cache miss)
+89 http fetch GET 200 https://registry.npmjs.org/dayjs 264ms (cache miss)
+90 http fetch GET 200 https://registry.npmjs.org/@pm2%2fpm2-version-check 320ms (cache miss)
+91 http fetch GET 200 https://registry.npmjs.org/@pm2%2fjs-api 385ms (cache miss)
+92 http fetch GET 200 https://registry.npmjs.org/pm2-deploy 969ms (cache miss)
+93 http fetch GET 200 https://registry.npmjs.org/croner 992ms (cache miss)
+94 http fetch GET 200 https://registry.npmjs.org/pm2-sysmonit 993ms (cache miss)
+95 http fetch GET 200 https://registry.npmjs.org/enquirer 1015ms (cache miss)
+96 http fetch GET 200 https://registry.npmjs.org/pidusage 1015ms (cache miss)
+97 http fetch GET 200 https://registry.npmjs.org/blessed 1189ms (cache miss)
+98 http fetch GET 200 https://registry.npmjs.org/@pm2%2fagent 1972ms (cache miss)
+99 http fetch GET 200 https://registry.npmjs.org/@pm2%2fio 2083ms (cache miss)
+100 timing idealTree:#root Completed in 2285ms
+101 silly placeDep node_modules/pm2 @pm2/agent@2.0.4 OK for: pm2@5.4.1 want: ~2.0.0
+102 silly placeDep node_modules/pm2 @pm2/io@6.0.1 OK for: pm2@5.4.1 want: ~6.0.0
+103 silly placeDep node_modules/pm2 @pm2/js-api@0.8.0 OK for: pm2@5.4.1 want: ~0.8.0
+104 silly placeDep node_modules/pm2 @pm2/pm2-version-check@1.0.4 OK for: pm2@5.4.1 want: latest
+105 silly placeDep node_modules/pm2 async@3.2.5 OK for: pm2@5.4.1 want: ~3.2.0
+106 silly placeDep node_modules/pm2 blessed@0.1.81 OK for: pm2@5.4.1 want: 0.1.81
+107 silly placeDep node_modules/pm2 chalk@3.0.0 OK for: pm2@5.4.1 want: 3.0.0
+108 silly placeDep node_modules/pm2 chokidar@3.6.0 OK for: pm2@5.4.1 want: ^3.5.3
+109 silly placeDep node_modules/pm2 cli-tableau@2.0.1 OK for: pm2@5.4.1 want: ^2.0.0
+110 silly placeDep node_modules/pm2 commander@2.15.1 OK for: pm2@5.4.1 want: 2.15.1
+111 silly placeDep node_modules/pm2 croner@4.1.97 OK for: pm2@5.4.1 want: ~4.1.92
+112 silly placeDep node_modules/pm2 dayjs@1.11.11 OK for: pm2@5.4.1 want: ~1.11.5
+113 silly placeDep node_modules/pm2 debug@4.3.5 OK for: pm2@5.4.1 want: ^4.3.1
+114 silly placeDep node_modules/pm2 enquirer@2.3.6 OK for: pm2@5.4.1 want: 2.3.6
+115 silly placeDep node_modules/pm2 eventemitter2@5.0.1 OK for: pm2@5.4.1 want: 5.0.1
+116 silly placeDep node_modules/pm2 fclone@1.0.11 OK for: pm2@5.4.1 want: 1.0.11
+117 silly placeDep node_modules/pm2 js-yaml@4.1.0 OK for: pm2@5.4.1 want: ~4.1.0
+118 silly placeDep node_modules/pm2 mkdirp@1.0.4 OK for: pm2@5.4.1 want: 1.0.4
+119 silly placeDep node_modules/pm2 needle@2.4.0 OK for: pm2@5.4.1 want: 2.4.0
+120 silly placeDep node_modules/pm2 pidusage@3.0.2 OK for: pm2@5.4.1 want: ~3.0
+121 silly placeDep node_modules/pm2 pm2-axon@4.0.1 OK for: pm2@5.4.1 want: ~4.0.1
+122 silly placeDep node_modules/pm2 pm2-axon-rpc@0.7.1 OK for: pm2@5.4.1 want: ~0.7.1
+123 silly placeDep node_modules/pm2 pm2-deploy@1.0.2 OK for: pm2@5.4.1 want: ~1.0.2
+124 silly placeDep node_modules/pm2 pm2-multimeter@0.1.2 OK for: pm2@5.4.1 want: ^0.1.2
+125 silly placeDep node_modules/pm2 pm2-sysmonit@1.2.8 OK for: pm2@5.4.1 want: ^1.2.8
+126 silly placeDep node_modules/pm2 promptly@2.2.0 OK for: pm2@5.4.1 want: ^2
+127 silly placeDep node_modules/pm2 semver@7.6.2 OK for: pm2@5.4.1 want: ^7.2
+128 silly placeDep node_modules/pm2 source-map-support@0.5.21 OK for: pm2@5.4.1 want: 0.5.21
+129 silly placeDep node_modules/pm2 sprintf-js@1.1.2 OK for: pm2@5.4.1 want: 1.1.2
+130 silly placeDep node_modules/pm2 vizion@2.2.1 OK for: pm2@5.4.1 want: ~2.2.1
+131 silly fetch manifest dayjs@~1.8.24
+132 silly fetch manifest fast-json-patch@^3.0.0-1
+133 silly fetch manifest nssocket@0.6.0
+134 silly fetch manifest proxy-agent@~6.3.0
+135 silly fetch manifest semver@~7.5.0
+136 silly fetch manifest ws@~7.5.10
+137 silly fetch manifest async@~2.6.1
+138 silly fetch manifest eventemitter2@^6.3.1
+139 silly fetch manifest require-in-the-middle@^5.0.0
+140 silly fetch manifest semver@~7.5.4
+141 silly fetch manifest shimmer@^1.2.0
+142 silly fetch manifest signal-exit@^3.0.3
+143 silly fetch manifest tslib@1.9.3
+144 silly fetch manifest async@^2.6.3
+145 silly fetch manifest extrareqp2@^1.0.0
+146 silly fetch manifest ws@^7.0.0
+147 silly fetch manifest ansi-styles@^4.1.0
+148 silly fetch manifest supports-color@^7.1.0
+149 silly fetch manifest anymatch@~3.1.2
+150 silly fetch manifest braces@~3.0.2
+151 silly fetch manifest glob-parent@~5.1.2
+152 silly fetch manifest is-binary-path@~2.1.0
+153 silly fetch manifest is-glob@~4.0.1
+154 silly fetch manifest normalize-path@~3.0.0
+155 silly fetch manifest readdirp@~3.6.0
+156 silly fetch manifest fsevents@~2.3.2
+157 silly fetch manifest ms@2.1.2
+158 silly fetch manifest ansi-colors@^4.1.1
+159 silly fetch manifest argparse@^2.0.1
+160 silly fetch manifest debug@^3.2.6
+161 silly fetch manifest iconv-lite@^0.4.4
+162 silly fetch manifest sax@^1.2.4
+163 silly fetch manifest safe-buffer@^5.2.1
+164 silly fetch manifest amp@~0.3.1
+165 silly fetch manifest amp-message@~0.1.1
+166 silly fetch manifest escape-string-regexp@^4.0.0
+167 silly fetch manifest run-series@^1.1.8
+168 silly fetch manifest tv4@^1.3.0
+169 silly fetch manifest charm@~0.1.1
+170 silly fetch manifest pidusage@^2.0.21
+171 silly fetch manifest systeminformation@^5.7
+172 silly fetch manifest tx2@~1.0.4
+173 silly fetch manifest read@^1.0.4
+174 silly fetch manifest buffer-from@^1.0.0
+175 silly fetch manifest source-map@^0.6.0
+176 silly fetch manifest git-node-fs@^1.0.0
+177 silly fetch manifest ini@^1.3.5
+178 silly fetch manifest js-git@^0.7.8
+179 http fetch GET 200 https://registry.npmjs.org/amp-message 225ms (cache miss)
+180 http fetch GET 200 https://registry.npmjs.org/shimmer 252ms (cache miss)
+181 http fetch GET 200 https://registry.npmjs.org/ws 256ms (cache hit)
+182 http fetch GET 200 https://registry.npmjs.org/signal-exit 256ms (cache hit)
+183 http fetch GET 200 https://registry.npmjs.org/ws 253ms (cache hit)
+184 http fetch GET 200 https://registry.npmjs.org/tslib 263ms (cache hit)
+185 http fetch GET 200 https://registry.npmjs.org/ansi-styles 259ms (cache hit)
+186 http fetch GET 200 https://registry.npmjs.org/supports-color 261ms (cache hit)
+187 http fetch GET 200 https://registry.npmjs.org/anymatch 264ms (cache hit)
+188 http fetch GET 200 https://registry.npmjs.org/braces 264ms (cache hit)
+189 http fetch GET 200 https://registry.npmjs.org/glob-parent 266ms (cache hit)
+190 http fetch GET 200 https://registry.npmjs.org/is-binary-path 266ms (cache hit)
+191 http fetch GET 200 https://registry.npmjs.org/is-glob 265ms (cache hit)
+192 http fetch GET 200 https://registry.npmjs.org/normalize-path 268ms (cache hit)
+193 http fetch GET 200 https://registry.npmjs.org/ms 265ms (cache hit)
+194 http fetch GET 200 https://registry.npmjs.org/argparse 264ms (cache hit)
+195 http fetch GET 200 https://registry.npmjs.org/iconv-lite 264ms (cache hit)
+196 http fetch GET 200 https://registry.npmjs.org/sax 265ms (cache hit)
+197 http fetch GET 200 https://registry.npmjs.org/safe-buffer 265ms (cache hit)
+198 http fetch GET 200 https://registry.npmjs.org/readdirp 275ms (cache hit)
+199 http fetch GET 200 https://registry.npmjs.org/ini 253ms (cache hit)
+200 http fetch GET 200 https://registry.npmjs.org/escape-string-regexp 264ms (cache hit)
+201 http fetch GET 200 https://registry.npmjs.org/source-map 257ms (cache hit)
+202 http fetch GET 200 https://registry.npmjs.org/buffer-from 259ms (cache hit)
+203 http fetch GET 200 https://registry.npmjs.org/fast-json-patch 309ms (cache miss)
+204 http fetch GET 200 https://registry.npmjs.org/charm 266ms (cache miss)
+205 http fetch GET 200 https://registry.npmjs.org/amp 271ms (cache miss)
+206 http fetch GET 200 https://registry.npmjs.org/git-node-fs 261ms (cache miss)
+207 http fetch GET 200 https://registry.npmjs.org/run-series 271ms (cache miss)
+208 http fetch GET 200 https://registry.npmjs.org/read 266ms (cache miss)
+209 http fetch GET 200 https://registry.npmjs.org/systeminformation 284ms (cache miss)
+210 http fetch GET 200 https://registry.npmjs.org/proxy-agent 406ms (cache miss)
+211 http fetch GET 200 https://registry.npmjs.org/tv4 866ms (cache miss)
+212 http fetch GET 200 https://registry.npmjs.org/require-in-the-middle 900ms (cache miss)
+213 http fetch GET 200 https://registry.npmjs.org/ansi-colors 903ms (cache miss)
+214 http fetch GET 200 https://registry.npmjs.org/js-git 888ms (cache miss)
+215 http fetch GET 200 https://registry.npmjs.org/tx2 899ms (cache miss)
+216 http fetch GET 200 https://registry.npmjs.org/extrareqp2 949ms (cache miss)
+217 http fetch GET 200 https://registry.npmjs.org/nssocket 975ms (cache miss)
+218 http fetch GET 200 https://registry.npmjs.org/fsevents 1078ms (cache revalidated)
+219 timing idealTree:node_modules/pm2 Completed in 1186ms
+220 silly fetch manifest bufferutil@^4.0.1
+221 http fetch GET 200 https://registry.npmjs.org/bufferutil 14ms (cache hit)
+222 silly fetch manifest utf-8-validate@^5.0.2
+223 http fetch GET 200 https://registry.npmjs.org/utf-8-validate 3ms (cache hit)
+224 silly placeDep node_modules/pm2/node_modules/@pm2/agent dayjs@1.8.36 OK for: @pm2/agent@2.0.4 want: ~1.8.24
+225 silly placeDep node_modules/pm2 fast-json-patch@3.1.1 OK for: @pm2/agent@2.0.4 want: ^3.0.0-1
+226 silly placeDep node_modules/pm2 nssocket@0.6.0 OK for: @pm2/agent@2.0.4 want: 0.6.0
+227 silly placeDep node_modules/pm2 proxy-agent@6.3.1 OK for: @pm2/agent@2.0.4 want: ~6.3.0
+228 silly placeDep node_modules/pm2/node_modules/@pm2/agent semver@7.5.4 OK for: @pm2/agent@2.0.4 want: ~7.5.0
+229 silly placeDep node_modules/pm2 ws@7.5.10 OK for: @pm2/agent@2.0.4 want: ~7.5.10
+230 silly fetch manifest eventemitter2@~0.4.14
+231 silly fetch manifest lazy@~1.0.11
+232 silly fetch manifest agent-base@^7.0.2
+233 silly fetch manifest http-proxy-agent@^7.0.0
+234 silly fetch manifest https-proxy-agent@^7.0.2
+235 silly fetch manifest lru-cache@^7.14.1
+236 silly fetch manifest pac-proxy-agent@^7.0.1
+237 silly fetch manifest proxy-from-env@^1.1.0
+238 silly fetch manifest socks-proxy-agent@^8.0.2
+239 silly fetch manifest lru-cache@^6.0.0
+240 http fetch GET 200 https://registry.npmjs.org/https-proxy-agent 22ms (cache hit)
+241 http fetch GET 200 https://registry.npmjs.org/lru-cache 22ms (cache hit)
+242 http fetch GET 200 https://registry.npmjs.org/agent-base 30ms (cache hit)
+243 http fetch GET 200 https://registry.npmjs.org/http-proxy-agent 32ms (cache hit)
+244 http fetch GET 200 https://registry.npmjs.org/lru-cache 28ms (cache hit)
+245 http fetch GET 200 https://registry.npmjs.org/lazy 54ms (cache miss)
+246 http fetch GET 200 https://registry.npmjs.org/proxy-from-env 49ms (cache miss)
+247 http fetch GET 200 https://registry.npmjs.org/pac-proxy-agent 861ms (cache miss)
+248 http fetch GET 200 https://registry.npmjs.org/socks-proxy-agent 892ms (cache miss)
+249 timing idealTree:node_modules/pm2/node_modules/@pm2/agent Completed in 939ms
+250 silly placeDep node_modules/pm2/node_modules/@pm2/io async@2.6.4 OK for: @pm2/io@6.0.1 want: ~2.6.1
+251 silly placeDep node_modules/pm2/node_modules/@pm2/io eventemitter2@6.4.9 OK for: @pm2/io@6.0.1 want: ^6.3.1
+252 silly placeDep node_modules/pm2 require-in-the-middle@5.2.0 OK for: @pm2/io@6.0.1 want: ^5.0.0
+253 silly placeDep node_modules/pm2/node_modules/@pm2/io semver@7.5.4 OK for: @pm2/io@6.0.1 want: ~7.5.4
+254 silly placeDep node_modules/pm2 shimmer@1.2.1 OK for: @pm2/io@6.0.1 want: ^1.2.0
+255 silly placeDep node_modules/pm2 signal-exit@3.0.7 OK for: @pm2/io@6.0.1 want: ^3.0.3
+256 silly placeDep node_modules/pm2 tslib@1.9.3 OK for: @pm2/io@6.0.1 want: 1.9.3
+257 silly fetch manifest lodash@^4.17.14
+258 silly fetch manifest module-details-from-path@^1.0.3
+259 silly fetch manifest resolve@^1.22.1
+260 http fetch GET 200 https://registry.npmjs.org/lodash 11ms (cache hit)
+261 http fetch GET 200 https://registry.npmjs.org/module-details-from-path 25ms (cache miss)
+262 http fetch GET 200 https://registry.npmjs.org/resolve 27ms (cache revalidated)
+263 timing idealTree:node_modules/pm2/node_modules/@pm2/io Completed in 45ms
+264 silly placeDep node_modules/pm2/node_modules/@pm2/js-api async@2.6.4 OK for: @pm2/js-api@0.8.0 want: ^2.6.3
+265 silly placeDep node_modules/pm2/node_modules/@pm2/js-api eventemitter2@6.4.9 OK for: @pm2/js-api@0.8.0 want: ^6.3.1
+266 silly placeDep node_modules/pm2 extrareqp2@1.0.0 OK for: @pm2/js-api@0.8.0 want: ^1.0.0
+267 silly fetch manifest follow-redirects@^1.14.0
+268 http fetch GET 200 https://registry.npmjs.org/follow-redirects 4ms (cache hit)
+269 timing idealTree:node_modules/pm2/node_modules/@pm2/js-api Completed in 12ms
+270 timing idealTree:node_modules/pm2/node_modules/@pm2/pm2-version-check Completed in 0ms
+271 timing idealTree:node_modules/pm2/node_modules/async Completed in 0ms
+272 timing idealTree:node_modules/pm2/node_modules/blessed Completed in 0ms
+273 silly placeDep node_modules/pm2 ansi-styles@4.3.0 OK for: chalk@3.0.0 want: ^4.1.0
+274 silly placeDep node_modules/pm2 supports-color@7.2.0 OK for: chalk@3.0.0 want: ^7.1.0
+275 silly fetch manifest color-convert@^2.0.1
+276 silly fetch manifest has-flag@^4.0.0
+277 http fetch GET 200 https://registry.npmjs.org/has-flag 15ms (cache hit)
+278 http fetch GET 200 https://registry.npmjs.org/color-convert 17ms (cache hit)
+279 timing idealTree:node_modules/pm2/node_modules/chalk Completed in 21ms
+280 silly placeDep node_modules/pm2 color-convert@2.0.1 OK for: ansi-styles@4.3.0 want: ^2.0.1
+281 silly fetch manifest color-name@~1.1.4
+282 http fetch GET 200 https://registry.npmjs.org/color-name 3ms (cache hit)
+283 timing idealTree:node_modules/pm2/node_modules/ansi-styles Completed in 6ms
+284 silly placeDep node_modules/pm2 anymatch@3.1.3 OK for: chokidar@3.6.0 want: ~3.1.2
+285 silly placeDep node_modules/pm2 braces@3.0.3 OK for: chokidar@3.6.0 want: ~3.0.2
+286 silly placeDep node_modules/pm2 fsevents@2.3.3 OK for: chokidar@3.6.0 want: ~2.3.2
+287 silly placeDep node_modules/pm2 glob-parent@5.1.2 OK for: chokidar@3.6.0 want: ~5.1.2
+288 silly placeDep node_modules/pm2 is-binary-path@2.1.0 OK for: chokidar@3.6.0 want: ~2.1.0
+289 silly placeDep node_modules/pm2 is-glob@4.0.3 OK for: chokidar@3.6.0 want: ~4.0.1
+290 silly placeDep node_modules/pm2 normalize-path@3.0.0 OK for: chokidar@3.6.0 want: ~3.0.0
+291 silly placeDep node_modules/pm2 readdirp@3.6.0 OK for: chokidar@3.6.0 want: ~3.6.0
+292 silly fetch manifest picomatch@^2.0.4
+293 silly fetch manifest fill-range@^7.1.1
+294 silly fetch manifest binary-extensions@^2.0.0
+295 silly fetch manifest is-extglob@^2.1.1
+296 silly fetch manifest picomatch@^2.2.1
+297 http fetch GET 200 https://registry.npmjs.org/fill-range 16ms (cache hit)
+298 http fetch GET 200 https://registry.npmjs.org/binary-extensions 17ms (cache hit)
+299 http fetch GET 200 https://registry.npmjs.org/is-extglob 17ms (cache hit)
+300 http fetch GET 200 https://registry.npmjs.org/picomatch 19ms (cache hit)
+301 http fetch GET 200 https://registry.npmjs.org/picomatch 18ms (cache hit)
+302 timing idealTree:node_modules/pm2/node_modules/chokidar Completed in 51ms
+303 silly placeDep node_modules/pm2 picomatch@2.3.1 OK for: anymatch@3.1.3 want: ^2.0.4
+304 timing idealTree:node_modules/pm2/node_modules/anymatch Completed in 2ms
+305 silly placeDep node_modules/pm2 fill-range@7.1.1 OK for: braces@3.0.3 want: ^7.1.1
+306 silly fetch manifest to-regex-range@^5.0.1
+307 http fetch GET 200 https://registry.npmjs.org/to-regex-range 3ms (cache hit)
+308 timing idealTree:node_modules/pm2/node_modules/braces Completed in 7ms
+309 timing idealTree:node_modules/pm2/node_modules/cli-tableau Completed in 0ms
+310 silly placeDep node_modules/pm2 color-name@1.1.4 OK for: color-convert@2.0.1 want: ~1.1.4
+311 timing idealTree:node_modules/pm2/node_modules/color-convert Completed in 4ms
+312 timing idealTree:node_modules/pm2/node_modules/color-name Completed in 0ms
+313 timing idealTree:node_modules/pm2/node_modules/commander Completed in 0ms
+314 timing idealTree:node_modules/pm2/node_modules/croner Completed in 0ms
+315 timing idealTree:node_modules/pm2/node_modules/dayjs Completed in 0ms
+316 silly placeDep node_modules/pm2 ms@2.1.2 OK for: debug@4.3.5 want: 2.1.2
+317 timing idealTree:node_modules/pm2/node_modules/debug Completed in 1ms
+318 silly placeDep node_modules/pm2 ansi-colors@4.1.3 OK for: enquirer@2.3.6 want: ^4.1.1
+319 timing idealTree:node_modules/pm2/node_modules/enquirer Completed in 5ms
+320 timing idealTree:node_modules/pm2/node_modules/ansi-colors Completed in 0ms
+321 timing idealTree:node_modules/pm2/node_modules/eventemitter2 Completed in 0ms
+322 silly placeDep node_modules/pm2 follow-redirects@1.15.6 OK for: extrareqp2@1.0.0 want: ^1.14.0
+323 timing idealTree:node_modules/pm2/node_modules/extrareqp2 Completed in 2ms
+324 timing idealTree:node_modules/pm2/node_modules/fast-json-patch Completed in 0ms
+325 timing idealTree:node_modules/pm2/node_modules/fclone Completed in 0ms
+326 silly placeDep node_modules/pm2 to-regex-range@5.0.1 OK for: fill-range@7.1.1 want: ^5.0.1
+327 silly fetch manifest is-number@^7.0.0
+328 http fetch GET 200 https://registry.npmjs.org/is-number 46ms (cache hit)
+329 timing idealTree:node_modules/pm2/node_modules/fill-range Completed in 50ms
+330 timing idealTree:node_modules/pm2/node_modules/follow-redirects Completed in 0ms
+331 timing idealTree:node_modules/pm2/node_modules/fsevents Completed in 0ms
+332 timing idealTree:node_modules/pm2/node_modules/glob-parent Completed in 0ms
+333 silly placeDep node_modules/pm2 binary-extensions@2.3.0 OK for: is-binary-path@2.1.0 want: ^2.0.0
+334 timing idealTree:node_modules/pm2/node_modules/is-binary-path Completed in 2ms
+335 timing idealTree:node_modules/pm2/node_modules/binary-extensions Completed in 0ms
+336 silly placeDep node_modules/pm2 is-extglob@2.1.1 OK for: is-glob@4.0.3 want: ^2.1.1
+337 timing idealTree:node_modules/pm2/node_modules/is-glob Completed in 3ms
+338 timing idealTree:node_modules/pm2/node_modules/is-extglob Completed in 0ms
+339 silly placeDep node_modules/pm2 argparse@2.0.1 OK for: js-yaml@4.1.0 want: ^2.0.1
+340 timing idealTree:node_modules/pm2/node_modules/js-yaml Completed in 4ms
+341 timing idealTree:node_modules/pm2/node_modules/argparse Completed in 0ms
+342 timing idealTree:node_modules/pm2/node_modules/mkdirp Completed in 0ms
+343 timing idealTree:node_modules/pm2/node_modules/ms Completed in 0ms
+344 silly placeDep node_modules/pm2/node_modules/needle debug@3.2.7 OK for: needle@2.4.0 want: ^3.2.6
+345 silly placeDep node_modules/pm2 iconv-lite@0.4.24 OK for: needle@2.4.0 want: ^0.4.4
+346 silly placeDep node_modules/pm2 sax@1.4.1 OK for: needle@2.4.0 want: ^1.2.4
+347 silly fetch manifest safer-buffer@>= 2.1.2 < 3
+348 http fetch GET 200 https://registry.npmjs.org/safer-buffer 4ms (cache hit)
+349 timing idealTree:node_modules/pm2/node_modules/needle Completed in 12ms
+350 silly placeDep node_modules/pm2 safer-buffer@2.1.2 OK for: iconv-lite@0.4.24 want: >= 2.1.2 < 3
+351 timing idealTree:node_modules/pm2/node_modules/iconv-lite Completed in 2ms
+352 timing idealTree:node_modules/pm2/node_modules/normalize-path Completed in 0ms
+353 silly placeDep node_modules/pm2/node_modules/nssocket eventemitter2@0.4.14 OK for: nssocket@0.6.0 want: ~0.4.14
+354 silly placeDep node_modules/pm2 lazy@1.0.11 OK for: nssocket@0.6.0 want: ~1.0.11
+355 timing idealTree:node_modules/pm2/node_modules/nssocket Completed in 3ms
+356 timing idealTree:node_modules/pm2/node_modules/lazy Completed in 0ms
+357 timing idealTree:node_modules/pm2/node_modules/picomatch Completed in 0ms
+358 silly placeDep node_modules/pm2 safe-buffer@5.2.1 OK for: pidusage@3.0.2 want: ^5.2.1
+359 timing idealTree:node_modules/pm2/node_modules/pidusage Completed in 2ms
+360 silly placeDep node_modules/pm2 amp@0.3.1 OK for: pm2-axon@4.0.1 want: ~0.3.1
+361 silly placeDep node_modules/pm2 amp-message@0.1.2 OK for: pm2-axon@4.0.1 want: ~0.1.1
+362 silly placeDep node_modules/pm2 escape-string-regexp@4.0.0 OK for: pm2-axon@4.0.1 want: ^4.0.0
+363 timing idealTree:node_modules/pm2/node_modules/pm2-axon Completed in 4ms
+364 timing idealTree:node_modules/pm2/node_modules/amp Completed in 0ms
+365 timing idealTree:node_modules/pm2/node_modules/amp-message Completed in 0ms
+366 timing idealTree:node_modules/pm2/node_modules/escape-string-regexp Completed in 0ms
+367 timing idealTree:node_modules/pm2/node_modules/pm2-axon-rpc Completed in 0ms
+368 silly placeDep node_modules/pm2 run-series@1.1.9 OK for: pm2-deploy@1.0.2 want: ^1.1.8
+369 silly placeDep node_modules/pm2 tv4@1.3.0 OK for: pm2-deploy@1.0.2 want: ^1.3.0
+370 timing idealTree:node_modules/pm2/node_modules/pm2-deploy Completed in 3ms
+371 silly placeDep node_modules/pm2 charm@0.1.2 OK for: pm2-multimeter@0.1.2 want: ~0.1.1
+372 timing idealTree:node_modules/pm2/node_modules/pm2-multimeter Completed in 2ms
+373 timing idealTree:node_modules/pm2/node_modules/charm Completed in 0ms
+374 silly placeDep node_modules/pm2/node_modules/pm2-sysmonit pidusage@2.0.21 OK for: pm2-sysmonit@1.2.8 want: ^2.0.21
+375 silly placeDep node_modules/pm2 systeminformation@5.22.11 OK for: pm2-sysmonit@1.2.8 want: ^5.7
+376 silly placeDep node_modules/pm2 tx2@1.0.5 OK for: pm2-sysmonit@1.2.8 want: ~1.0.4
+377 silly fetch manifest json-stringify-safe@^5.0.1
+378 http fetch GET 200 https://registry.npmjs.org/json-stringify-safe 26ms (cache miss)
+379 timing idealTree:node_modules/pm2/node_modules/pm2-sysmonit Completed in 33ms
+380 silly placeDep node_modules/pm2 read@1.0.7 OK for: promptly@2.2.0 want: ^1.0.4
+381 silly fetch manifest mute-stream@~0.0.4
+382 http fetch GET 200 https://registry.npmjs.org/mute-stream 27ms (cache miss)
+383 timing idealTree:node_modules/pm2/node_modules/promptly Completed in 31ms
+384 silly placeDep node_modules/pm2 agent-base@7.1.1 OK for: proxy-agent@6.3.1 want: ^7.0.2
+385 silly placeDep node_modules/pm2 http-proxy-agent@7.0.2 OK for: proxy-agent@6.3.1 want: ^7.0.0
+386 silly placeDep node_modules/pm2 https-proxy-agent@7.0.5 OK for: proxy-agent@6.3.1 want: ^7.0.2
+387 silly placeDep node_modules/pm2 lru-cache@7.18.3 OK for: proxy-agent@6.3.1 want: ^7.14.1
+388 silly placeDep node_modules/pm2 pac-proxy-agent@7.0.2 OK for: proxy-agent@6.3.1 want: ^7.0.1
+389 silly placeDep node_modules/pm2 proxy-from-env@1.1.0 OK for: proxy-agent@6.3.1 want: ^1.1.0
+390 silly placeDep node_modules/pm2 socks-proxy-agent@8.0.4 OK for: proxy-agent@6.3.1 want: ^8.0.2
+391 silly fetch manifest @tootallnate/quickjs-emscripten@^0.23.0
+392 silly fetch manifest get-uri@^6.0.1
+393 silly fetch manifest pac-resolver@^7.0.1
+394 silly fetch manifest socks@^2.8.3
+395 http fetch GET 200 https://registry.npmjs.org/socks 32ms (cache miss)
+396 http fetch GET 200 https://registry.npmjs.org/pac-resolver 843ms (cache miss)
+397 http fetch GET 200 https://registry.npmjs.org/get-uri 869ms (cache miss)
+398 http fetch GET 200 https://registry.npmjs.org/@tootallnate%2fquickjs-emscripten 1972ms (cache miss)
+399 timing idealTree:node_modules/pm2/node_modules/proxy-agent Completed in 1987ms
+400 timing idealTree:node_modules/pm2/node_modules/agent-base Completed in 0ms
+401 timing idealTree:node_modules/pm2/node_modules/http-proxy-agent Completed in 0ms
+402 timing idealTree:node_modules/pm2/node_modules/https-proxy-agent Completed in 0ms
+403 timing idealTree:node_modules/pm2/node_modules/lru-cache Completed in 0ms
+404 silly placeDep node_modules/pm2 @tootallnate/quickjs-emscripten@0.23.0 OK for: pac-proxy-agent@7.0.2 want: ^0.23.0
+405 silly placeDep node_modules/pm2 get-uri@6.0.3 OK for: pac-proxy-agent@7.0.2 want: ^6.0.1
+406 silly placeDep node_modules/pm2 pac-resolver@7.0.1 OK for: pac-proxy-agent@7.0.2 want: ^7.0.1
+407 silly fetch manifest basic-ftp@^5.0.2
+408 silly fetch manifest data-uri-to-buffer@^6.0.2
+409 silly fetch manifest fs-extra@^11.2.0
+410 silly fetch manifest degenerator@^5.0.0
+411 silly fetch manifest netmask@^2.0.2
+412 http fetch GET 200 https://registry.npmjs.org/fs-extra 33ms (cache revalidated)
+413 http fetch GET 200 https://registry.npmjs.org/netmask 33ms (cache miss)
+414 http fetch GET 200 https://registry.npmjs.org/degenerator 854ms (cache miss)
+415 http fetch GET 200 https://registry.npmjs.org/basic-ftp 870ms (cache miss)
+416 http fetch GET 200 https://registry.npmjs.org/data-uri-to-buffer 897ms (cache miss)
+417 timing idealTree:node_modules/pm2/node_modules/pac-proxy-agent Completed in 904ms
+418 timing idealTree:node_modules/pm2/node_modules/@tootallnate/quickjs-emscripten Completed in 0ms
+419 silly placeDep node_modules/pm2 basic-ftp@5.0.5 OK for: get-uri@6.0.3 want: ^5.0.2
+420 silly placeDep node_modules/pm2 data-uri-to-buffer@6.0.2 OK for: get-uri@6.0.3 want: ^6.0.2
+421 silly placeDep node_modules/pm2 fs-extra@11.2.0 OK for: get-uri@6.0.3 want: ^11.2.0
+422 silly fetch manifest graceful-fs@^4.2.0
+423 silly fetch manifest jsonfile@^6.0.1
+424 silly fetch manifest universalify@^2.0.0
+425 http fetch GET 200 https://registry.npmjs.org/graceful-fs 37ms (cache revalidated)
+426 http fetch GET 200 https://registry.npmjs.org/universalify 37ms (cache revalidated)
+427 http fetch GET 200 https://registry.npmjs.org/jsonfile 331ms (cache revalidated)
+428 timing idealTree:node_modules/pm2/node_modules/get-uri Completed in 338ms
+429 timing idealTree:node_modules/pm2/node_modules/basic-ftp Completed in 0ms
+430 timing idealTree:node_modules/pm2/node_modules/data-uri-to-buffer Completed in 0ms
+431 silly placeDep node_modules/pm2 graceful-fs@4.2.11 OK for: fs-extra@11.2.0 want: ^4.2.0
+432 silly placeDep node_modules/pm2 jsonfile@6.1.0 OK for: fs-extra@11.2.0 want: ^6.0.1
+433 silly placeDep node_modules/pm2 universalify@2.0.1 OK for: fs-extra@11.2.0 want: ^2.0.0
+434 timing idealTree:node_modules/pm2/node_modules/fs-extra Completed in 6ms
+435 timing idealTree:node_modules/pm2/node_modules/graceful-fs Completed in 0ms
+436 timing idealTree:node_modules/pm2/node_modules/jsonfile Completed in 0ms
+437 silly placeDep node_modules/pm2 degenerator@5.0.1 OK for: pac-resolver@7.0.1 want: ^5.0.0
+438 silly placeDep node_modules/pm2 netmask@2.0.2 OK for: pac-resolver@7.0.1 want: ^2.0.2
+439 silly fetch manifest ast-types@^0.13.4
+440 silly fetch manifest escodegen@^2.1.0
+441 silly fetch manifest esprima@^4.0.1
+442 http fetch GET 200 https://registry.npmjs.org/escodegen 9ms (cache hit)
+443 http fetch GET 200 https://registry.npmjs.org/esprima 10ms (cache hit)
+444 http fetch GET 200 https://registry.npmjs.org/ast-types 887ms (cache miss)
+445 timing idealTree:node_modules/pm2/node_modules/pac-resolver Completed in 894ms
+446 silly placeDep node_modules/pm2 ast-types@0.13.4 OK for: degenerator@5.0.1 want: ^0.13.4
+447 silly placeDep node_modules/pm2 escodegen@2.1.0 OK for: degenerator@5.0.1 want: ^2.1.0
+448 silly placeDep node_modules/pm2 esprima@4.0.1 OK for: degenerator@5.0.1 want: ^4.0.1
+449 silly fetch manifest tslib@^2.0.1
+450 silly fetch manifest estraverse@^5.2.0
+451 silly fetch manifest esutils@^2.0.2
+452 silly fetch manifest source-map@~0.6.1
+453 http fetch GET 200 https://registry.npmjs.org/estraverse 22ms (cache hit)
+454 http fetch GET 200 https://registry.npmjs.org/esutils 48ms (cache revalidated)
+455 timing idealTree:node_modules/pm2/node_modules/degenerator Completed in 56ms
+456 silly placeDep node_modules/pm2/node_modules/ast-types tslib@2.6.3 OK for: ast-types@0.13.4 want: ^2.0.1
+457 timing idealTree:node_modules/pm2/node_modules/ast-types Completed in 4ms
+458 silly placeDep node_modules/pm2 estraverse@5.3.0 OK for: escodegen@2.1.0 want: ^5.2.0
+459 silly placeDep node_modules/pm2 esutils@2.0.3 OK for: escodegen@2.1.0 want: ^2.0.2
+460 silly placeDep node_modules/pm2 source-map@0.6.1 OK for: escodegen@2.1.0 want: ~0.6.1
+461 timing idealTree:node_modules/pm2/node_modules/escodegen Completed in 8ms
+462 timing idealTree:node_modules/pm2/node_modules/esprima Completed in 0ms
+463 timing idealTree:node_modules/pm2/node_modules/estraverse Completed in 0ms
+464 timing idealTree:node_modules/pm2/node_modules/esutils Completed in 0ms
+465 timing idealTree:node_modules/pm2/node_modules/netmask Completed in 0ms
+466 timing idealTree:node_modules/pm2/node_modules/proxy-from-env Completed in 0ms
+467 silly placeDep node_modules/pm2 mute-stream@0.0.8 OK for: read@1.0.7 want: ~0.0.4
+468 timing idealTree:node_modules/pm2/node_modules/read Completed in 1ms
+469 timing idealTree:node_modules/pm2/node_modules/mute-stream Completed in 0ms
+470 timing idealTree:node_modules/pm2/node_modules/readdirp Completed in 0ms
+471 silly placeDep node_modules/pm2 module-details-from-path@1.0.3 OK for: require-in-the-middle@5.2.0 want: ^1.0.3
+472 silly placeDep node_modules/pm2 resolve@1.22.8 OK for: require-in-the-middle@5.2.0 want: ^1.22.1
+473 silly fetch manifest is-core-module@^2.13.0
+474 silly fetch manifest path-parse@^1.0.7
+475 silly fetch manifest supports-preserve-symlinks-flag@^1.0.0
+476 http fetch GET 200 https://registry.npmjs.org/is-core-module 34ms (cache revalidated)
+477 http fetch GET 200 https://registry.npmjs.org/path-parse 35ms (cache revalidated)
+478 http fetch GET 200 https://registry.npmjs.org/supports-preserve-symlinks-flag 39ms (cache revalidated)
+479 timing idealTree:node_modules/pm2/node_modules/require-in-the-middle Completed in 45ms
+480 timing idealTree:node_modules/pm2/node_modules/module-details-from-path Completed in 0ms
+481 silly placeDep node_modules/pm2 is-core-module@2.14.0 OK for: resolve@1.22.8 want: ^2.13.0
+482 silly placeDep node_modules/pm2 path-parse@1.0.7 OK for: resolve@1.22.8 want: ^1.0.7
+483 silly placeDep node_modules/pm2 supports-preserve-symlinks-flag@1.0.0 OK for: resolve@1.22.8 want: ^1.0.0
+484 silly fetch manifest hasown@^2.0.2
+485 http fetch GET 200 https://registry.npmjs.org/hasown 4ms (cache hit)
+486 timing idealTree:node_modules/pm2/node_modules/resolve Completed in 9ms
+487 silly placeDep node_modules/pm2 hasown@2.0.2 OK for: is-core-module@2.14.0 want: ^2.0.2
+488 silly fetch manifest function-bind@^1.1.2
+489 http fetch GET 200 https://registry.npmjs.org/function-bind 4ms (cache hit)
+490 timing idealTree:node_modules/pm2/node_modules/is-core-module Completed in 8ms
+491 silly placeDep node_modules/pm2 function-bind@1.1.2 OK for: hasown@2.0.2 want: ^1.1.2
+492 timing idealTree:node_modules/pm2/node_modules/hasown Completed in 1ms
+493 timing idealTree:node_modules/pm2/node_modules/function-bind Completed in 0ms
+494 timing idealTree:node_modules/pm2/node_modules/path-parse Completed in 0ms
+495 timing idealTree:node_modules/pm2/node_modules/run-series Completed in 0ms
+496 timing idealTree:node_modules/pm2/node_modules/safe-buffer Completed in 0ms
+497 timing idealTree:node_modules/pm2/node_modules/safer-buffer Completed in 0ms
+498 timing idealTree:node_modules/pm2/node_modules/sax Completed in 0ms
+499 timing idealTree:node_modules/pm2/node_modules/semver Completed in 0ms
+500 timing idealTree:node_modules/pm2/node_modules/shimmer Completed in 0ms
+501 timing idealTree:node_modules/pm2/node_modules/signal-exit Completed in 0ms
+502 silly placeDep node_modules/pm2 socks@2.8.3 OK for: socks-proxy-agent@8.0.4 want: ^2.8.3
+503 silly fetch manifest ip-address@^9.0.5
+504 silly fetch manifest smart-buffer@^4.2.0
+505 http fetch GET 200 https://registry.npmjs.org/smart-buffer 47ms (cache miss)
+506 http fetch GET 200 https://registry.npmjs.org/ip-address 51ms (cache miss)
+507 timing idealTree:node_modules/pm2/node_modules/socks-proxy-agent Completed in 56ms
+508 silly placeDep node_modules/pm2 ip-address@9.0.5 OK for: socks@2.8.3 want: ^9.0.5
+509 silly placeDep node_modules/pm2 smart-buffer@4.2.0 OK for: socks@2.8.3 want: ^4.2.0
+510 silly fetch manifest jsbn@1.1.0
+511 silly fetch manifest sprintf-js@^1.1.3
+512 http fetch GET 200 https://registry.npmjs.org/jsbn 23ms (cache miss)
+513 timing idealTree:node_modules/pm2/node_modules/socks Completed in 27ms
+514 silly placeDep node_modules/pm2 jsbn@1.1.0 OK for: ip-address@9.0.5 want: 1.1.0
+515 silly placeDep node_modules/pm2/node_modules/ip-address sprintf-js@1.1.3 OK for: ip-address@9.0.5 want: ^1.1.3
+516 timing idealTree:node_modules/pm2/node_modules/ip-address Completed in 8ms
+517 timing idealTree:node_modules/pm2/node_modules/jsbn Completed in 0ms
+518 timing idealTree:node_modules/pm2/node_modules/smart-buffer Completed in 0ms
+519 timing idealTree:node_modules/pm2/node_modules/source-map Completed in 0ms
+520 silly placeDep node_modules/pm2 buffer-from@1.1.2 OK for: source-map-support@0.5.21 want: ^1.0.0
+521 timing idealTree:node_modules/pm2/node_modules/source-map-support Completed in 3ms
+522 timing idealTree:node_modules/pm2/node_modules/buffer-from Completed in 0ms
+523 timing idealTree:node_modules/pm2/node_modules/sprintf-js Completed in 0ms
+524 silly placeDep node_modules/pm2 has-flag@4.0.0 OK for: supports-color@7.2.0 want: ^4.0.0
+525 timing idealTree:node_modules/pm2/node_modules/supports-color Completed in 2ms
+526 timing idealTree:node_modules/pm2/node_modules/has-flag Completed in 0ms
+527 timing idealTree:node_modules/pm2/node_modules/supports-preserve-symlinks-flag Completed in 0ms
+528 timing idealTree:node_modules/pm2/node_modules/systeminformation Completed in 0ms
+529 silly placeDep node_modules/pm2 is-number@7.0.0 OK for: to-regex-range@5.0.1 want: ^7.0.0
+530 timing idealTree:node_modules/pm2/node_modules/to-regex-range Completed in 2ms
+531 timing idealTree:node_modules/pm2/node_modules/is-number Completed in 0ms
+532 timing idealTree:node_modules/pm2/node_modules/tslib Completed in 0ms
+533 timing idealTree:node_modules/pm2/node_modules/tv4 Completed in 0ms
+534 silly placeDep node_modules/pm2 json-stringify-safe@5.0.1 OK for: tx2@1.0.5 want: ^5.0.1
+535 timing idealTree:node_modules/pm2/node_modules/tx2 Completed in 2ms
+536 timing idealTree:node_modules/pm2/node_modules/json-stringify-safe Completed in 0ms
+537 timing idealTree:node_modules/pm2/node_modules/universalify Completed in 0ms
+538 silly placeDep node_modules/pm2/node_modules/vizion async@2.6.4 OK for: vizion@2.2.1 want: ^2.6.3
+539 silly placeDep node_modules/pm2 git-node-fs@1.0.0 OK for: vizion@2.2.1 want: ^1.0.0
+540 silly placeDep node_modules/pm2 ini@1.3.8 OK for: vizion@2.2.1 want: ^1.3.5
+541 silly placeDep node_modules/pm2 js-git@0.7.8 OK for: vizion@2.2.1 want: ^0.7.8
+542 silly fetch manifest bodec@^0.1.0
+543 silly fetch manifest culvert@^0.1.2
+544 silly fetch manifest git-sha1@^0.1.2
+545 silly fetch manifest pako@^0.2.5
+546 http fetch GET 200 https://registry.npmjs.org/culvert 31ms (cache miss)
+547 http fetch GET 200 https://registry.npmjs.org/pako 31ms (cache miss)
+548 http fetch GET 200 https://registry.npmjs.org/git-sha1 892ms (cache miss)
+549 http fetch GET 200 https://registry.npmjs.org/bodec 894ms (cache miss)
+550 timing idealTree:node_modules/pm2/node_modules/vizion Completed in 901ms
+551 timing idealTree:node_modules/pm2/node_modules/git-node-fs Completed in 0ms
+552 timing idealTree:node_modules/pm2/node_modules/ini Completed in 0ms
+553 silly placeDep node_modules/pm2 bodec@0.1.0 OK for: js-git@0.7.8 want: ^0.1.0
+554 silly placeDep node_modules/pm2 culvert@0.1.2 OK for: js-git@0.7.8 want: ^0.1.2
+555 silly placeDep node_modules/pm2 git-sha1@0.1.2 OK for: js-git@0.7.8 want: ^0.1.2
+556 silly placeDep node_modules/pm2 pako@0.2.9 OK for: js-git@0.7.8 want: ^0.2.5
+557 timing idealTree:node_modules/pm2/node_modules/js-git Completed in 6ms
+558 timing idealTree:node_modules/pm2/node_modules/bodec Completed in 0ms
+559 timing idealTree:node_modules/pm2/node_modules/culvert Completed in 0ms
+560 timing idealTree:node_modules/pm2/node_modules/git-sha1 Completed in 0ms
+561 timing idealTree:node_modules/pm2/node_modules/pako Completed in 0ms
+562 timing idealTree:node_modules/pm2/node_modules/ws Completed in 0ms
+563 timing idealTree:node_modules/pm2/node_modules/@pm2/agent/node_modules/dayjs Completed in 0ms
+564 silly placeDep node_modules/pm2/node_modules/@pm2/agent lru-cache@6.0.0 OK for: semver@7.5.4 want: ^6.0.0
+565 silly fetch manifest yallist@^4.0.0
+566 http fetch GET 200 https://registry.npmjs.org/yallist 11ms (cache hit)
+567 timing idealTree:node_modules/pm2/node_modules/@pm2/agent/node_modules/semver Completed in 15ms
+568 silly placeDep node_modules/pm2 yallist@4.0.0 OK for: lru-cache@6.0.0 want: ^4.0.0
+569 timing idealTree:node_modules/pm2/node_modules/@pm2/agent/node_modules/lru-cache Completed in 2ms
+570 timing idealTree:node_modules/pm2/node_modules/yallist Completed in 0ms
+571 silly placeDep node_modules/pm2 lodash@4.17.21 OK for: async@2.6.4 want: ^4.17.14
+572 timing idealTree:node_modules/pm2/node_modules/@pm2/io/node_modules/async Completed in 2ms
+573 timing idealTree:node_modules/pm2/node_modules/lodash Completed in 0ms
+574 timing idealTree:node_modules/pm2/node_modules/@pm2/io/node_modules/eventemitter2 Completed in 0ms
+575 silly placeDep node_modules/pm2/node_modules/@pm2/io lru-cache@6.0.0 OK for: semver@7.5.4 want: ^6.0.0
+576 timing idealTree:node_modules/pm2/node_modules/@pm2/io/node_modules/semver Completed in 2ms
+577 timing idealTree:node_modules/pm2/node_modules/@pm2/io/node_modules/lru-cache Completed in 0ms
+578 timing idealTree:node_modules/pm2/node_modules/@pm2/js-api/node_modules/async Completed in 0ms
+579 timing idealTree:node_modules/pm2/node_modules/@pm2/js-api/node_modules/eventemitter2 Completed in 0ms
+580 timing idealTree:node_modules/pm2/node_modules/ast-types/node_modules/tslib Completed in 0ms
+581 timing idealTree:node_modules/pm2/node_modules/ip-address/node_modules/sprintf-js Completed in 0ms
+582 timing idealTree:node_modules/pm2/node_modules/needle/node_modules/debug Completed in 0ms
+583 timing idealTree:node_modules/pm2/node_modules/nssocket/node_modules/eventemitter2 Completed in 0ms
+584 timing idealTree:node_modules/pm2/node_modules/pm2-sysmonit/node_modules/pidusage Completed in 0ms
+585 timing idealTree:node_modules/pm2/node_modules/vizion/node_modules/async Completed in 0ms
+586 timing idealTree:buildDeps Completed in 10029ms
+587 timing idealTree:fixDepFlags Completed in 3ms
+588 timing idealTree Completed in 10054ms
+589 timing reify:loadTrees Completed in 10057ms
+590 timing reify:diffTrees Completed in 5ms
+591 silly reify moves {}
+592 timing reify:retireShallow Completed in 2ms
+593 timing reify:rollback:createSparse Completed in 0ms
+594 timing reify:rollback:retireShallow Completed in 0ms
+595 timing command:install Completed in 10092ms
+596 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules'
+597 verbose cwd /home/ubuntu/frontend/frontend
+598 verbose Linux 6.8.0-1009-aws
+599 verbose node v18.19.1
+600 verbose npm  v9.2.0
+601 error code EACCES
+602 error syscall mkdir
+603 error path /usr/local/lib/node_modules
+604 error errno -13
+605 error [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules'] {
+605 error   errno: -13,
+605 error   code: 'EACCES',
+605 error   syscall: 'mkdir',
+605 error   path: '/usr/local/lib/node_modules'
+605 error }
+606 error
+606 error The operation was rejected by your operating system.
+606 error It is likely you do not have the permissions to access this file as the current user
+606 error
+606 error If you believe this might be a permissions issue, please double-check the
+606 error permissions of the file and its containing directories, or try running
+606 error the command again as root/Administrator.
+607 verbose exit -13
+608 timing npm Completed in 10163ms
+609 verbose unfinished npm timer reify 1720321209794
+610 verbose unfinished npm timer reify:createSparse 1720321219867
+611 verbose code -13
+612 error A complete log of this run can be found in:
+612 error     /home/ubuntu/.npm/_logs/2024-07-07T03_00_09_724Z-debug-0.log

@@ -1,0 +1,23 @@
+nohup: ignoring input
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.36.9:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 953-915-121
+152.59.198.239 - - [07/Jul/2024 02:58:26] "GET / HTTP/1.1" 200 -
+152.59.198.239 - - [07/Jul/2024 02:58:28] "GET / HTTP/1.1" 200 -
+152.59.198.239 - - [07/Jul/2024 03:00:19] "GET / HTTP/1.1" 200 -
+152.59.198.239 - - [07/Jul/2024 03:00:20] "GET / HTTP/1.1" 200 -
+152.59.198.239 - - [07/Jul/2024 03:02:41] "GET / HTTP/1.1" 200 -
+152.59.198.239 - - [07/Jul/2024 03:07:39] "GET / HTTP/1.1" 200 -
+152.59.198.239 - - [07/Jul/2024 03:13:07] "GET / HTTP/1.1" 200 -
+152.59.198.239 - - [07/Jul/2024 03:13:08] "GET / HTTP/1.1" 200 -
+152.59.198.239 - - [07/Jul/2024 03:21:14] "GET / HTTP/1.1" 200 -
+152.59.198.239 - - [07/Jul/2024 03:21:15] "GET / HTTP/1.1" 200 -
+152.59.198.239 - - [07/Jul/2024 03:21:26] "GET / HTTP/1.1" 200 -
+152.59.198.239 - - [07/Jul/2024 03:21:26] "GET /favicon.ico HTTP/1.1" 404 -
